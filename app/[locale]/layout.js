@@ -1,18 +1,32 @@
 import { Inter, DM_Sans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { unstable_setRequestLocale } from "next-intl/server";
-
-import { useLocale } from "next-intl";
+import {
+  unstable_setRequestLocale,
+  getFormatter,
+  getNow,
+  getTimeZone,
+  getTranslator,
+} from "next-intl/server";
 import { notFound } from "next/navigation";
 import "@/app/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Aimplifyy",
-  description: "AI Automation agency",
-};
+export async function generateMetadata({ params: { locale } }) {
+  const t = await getTranslator(locale);
+  const formatter = await getFormatter(locale);
+  const now = await getNow(locale);
+  const timeZone = await getTimeZone(locale);
+
+  return {
+    title: t("Title"),
+    other: {
+      currentYear: formatter.dateTime(now, { year: "numeric" }),
+      timeZone: timeZone || "N/A",
+    },
+  };
+}
 
 const locales = ["en", "fr"];
 

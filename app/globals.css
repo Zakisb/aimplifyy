@@ -206,6 +206,7 @@ p {
 
 .feature-section .feature-bg {
   position: absolute;
+  z-index: -1;
   bottom: 0;
   opacity: 0.2;
   width: 100%;

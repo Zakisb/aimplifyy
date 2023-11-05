@@ -23,6 +23,10 @@ const servicesData = [
 
 const Services = () => {
   const t = useTranslations("Services");
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
 
   return (
     <div
@@ -35,7 +39,7 @@ const Services = () => {
             key={service.localeKey}
             className={clsx(
               index % 2 === 0 ? "xl:flex-row" : "xl:flex-row-reverse",
-              `flex gap-10  px-20 items-center max-w-screen-2xl relative flex-col`
+              `flex gap-10 px-20 items-center max-w-screen-2xl relative flex-col`
             )}
           >
             <div
@@ -59,9 +63,14 @@ const Services = () => {
               <p className="font-regular text-gray-400">
                 {t(`${service.localeKey}.description`)}
               </p>
-              <Button className="md:flex hidden">
+              <a
+                data-cursor="pointer"
+                href="https://calendly.com/aimplify"
+                target="_blank"
+                className="text-md font-medium leading-6 text-center md:flex hidden w-fit text-white bg-[#2FD69E] px-6 py-2.5 rounded-full hover:bg-primary-700"
+              >
                 {t(`${service.localeKey}.ctaText`)}
-              </Button>
+              </a>
             </div>
           </div>
         );

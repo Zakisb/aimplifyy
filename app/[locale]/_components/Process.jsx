@@ -25,7 +25,7 @@ const processData = [
 const Process = () => {
   const t = useTranslations("Process");
   return (
-    <div id="process" className="feature-section px-4 flex flex-col py-36">
+    <div id="process" className="feature-section px-4 flex flex-col py-36 ">
       <div className="bg-effect">
         <img
           src="/images/feature.gif"
