@@ -13,7 +13,7 @@ const BookCall = () => {
           src="https://calendly.com/aimplify"
           style={{ minHeight: "650px", height: "60vh" }}
           width="100%"
-          frameborder="0"
+          frameBorder="0"
         ></iframe>
       </div>
       <div className="text-4xl lg:w-1/2">
