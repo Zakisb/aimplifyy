@@ -1,0 +1,110 @@
+{
+  "Banner": {
+    "title": "Accepting 3 new clients. Get started today."
+  },
+  "Navbar": {
+    "why": "Why AI",
+    "process": "Process",
+    "services": "Services",
+    "cta": "Schedule a call"
+  },
+  "Header": {
+    "title": {
+      "underline": "amplify",
+      "main": "Your Operations: <break >Save Time & Money with AI Automation</break>",
+      "description": "We help you automate your workflows, automate repetitive tasks,  and elevate your business.",
+      "cta": "Book your free Audit Call",
+      "legend": "No-pressure 30 minute discovery call"
+    }
+  },
+  "Why": {
+    "title": "You can't beat AI... so why not <underline>use</underline> it?",
+    "description": "With the public launch of OpenAI's ChatGPT and the GPT-4 LLM, people are starting to see the true power of AI. We help you utilize that power into your business.",
+    "cta": "Book your free Audit Call",
+    "legend": "No-pressure 30 minute discovery call",
+    "sections": {
+      "section_1": {
+        "title": "Stop wasting hundreds of work hours on repetitive tasks",
+        "description": "Using powerful workflow automations we are able to help you automate annoying and time-heavy tasks."
+      },
+      "section_2": {
+        "title": "Let AI handle 80% of your customer support",
+        "description": "Using the power of AI chatbots trained on all of your company data, you will be able to handle 80% of your support tickets with AI."
+      },
+      "section_3": {
+        "title": "Offload new customers onboarding to AI",
+        "description": "Chatbots for internal use can make your employee's life 10x easier, and make them 10x more productive."
+      }
+    }
+  },
+  "Services": {
+    "service1": {
+      "title": "Customer support chatbots",
+      "description": "We build custom chatbots trained on all of your company data - product descriptions, specifications, PDFs, customer support chat database, etc…",
+      "ctaText": "Inquire about AI chatbots"
+    },
+    "service2": {
+      "title": "Workflow automations",
+      "description": "Manually doing repetitive tasks not only takes more time but also leaves room for human error. By creating AI workflow automations for your specific needs you'll be able to offload hours of work.",
+      "ctaText": "Inquire about workflow automations"
+    },
+    "service3": {
+      "title": "Chatbots for internal use",
+      "description": "Chatbots are not only useful for customer support. Internal use chatbots can be used for a variety of tasks - like helping onboard new employees, answering common questions, scheduling calls, etc.",
+      "ctaText": "Inquire about internal Chatbots"
+    }
+  },
+  "Process": {
+    "title": "Our Process",
+    "steps": {
+      "step1": {
+        "title": "Book your free discovery call",
+        "description": "On this call you'll share a little more about your company, the processes you have in place, and we will suggest areas in which AI can help you",
+        "ctaText": "Speak to us Today",
+        "legend": "No-pressure 30 minute discovery call"
+      },
+      "step2": {
+        "title": "Planning & strategy session",
+        "description": "If we're a fit, after the discovery call we will start planning the course of action. We'll schedule a Strategy Session call where we will share with you the next steps, and adjust the plan if needed."
+      },
+      "step3": {
+        "title": "Development",
+        "description": "Once we've agreed on the strategy and plan of action, we get to work and start developing your new AI solutions."
+      },
+      "step4": {
+        "title": "Deployment + optimization",
+        "description": "Once we're ready with the development, we will deploy the product and start looking for potential areas of improvement.",
+        "ctaText": "Get Started",
+        "legend": "No-pressure 30 minute discovery call"
+      }
+    }
+  },
+  "BookCall": {
+    "title": "Book your free audit call",
+    "label": "Schedule your call with us",
+    "legend": "No-pressure 30 minute discovery call",
+    "paragraphs": {
+      "p1": "The goal of this call is to get to know you and your business, and see if you're a good fit. Find a slot that works for you on the Calendar and let's talk!",
+      "p2": "This call is perfect for:"
+    },
+    "lists": {
+      "l1": "Companies looking to improve their efficiency",
+      "l2": "Founders and C-Level executives with specific ideas of how to implement AI into their companies",
+      "l3": "Founders and C-Level executives looking to better understand AI and how to implement it in their companies"
+    }
+  },
+  "Cta": {
+    "title": "Ready to <underline>move</underline> ahead?",
+    "description": "We help you automate your workflows, automate repetitive tasks, and elevate your business.",
+    "benefits": {
+      "b1": "Reduce Costs",
+      "b2": "Increase Operations speed",
+      "b3": "Boost Efficiency",
+      "b4": "Squeeze More Profit"
+    },
+    "cta": "Book your free Audit Call"
+  },
+  "Footer": {
+    "copyright": "Copyright © {date} Aimplify. All rights reserved."
+  }
+}

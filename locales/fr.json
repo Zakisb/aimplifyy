@@ -1,0 +1,111 @@
+{
+  "Banner": {
+    "title": "Nous acceptons 3 nouveaux clients. Lancez-vous dès aujourd'hui."
+  },
+  "Navbar": {
+    "why": "Pourquoi l'AI",
+    "process": "Processus",
+    "services": "Services",
+    "cta": "Planifier un appel"
+  },
+  "Header": {
+    "title": {
+      "underline": "amplifier",
+      "main": "Vos Opérations : <break>Économisez du temps et de l'argent avec l'automatisation IA</break>",
+      "description": "Nous vous aidons à automatiser vos flux de travail, automatiser les tâches répétitives, et à élever votre entreprise.",
+      "cta": "Réservez votre appel d'audit gratuit",
+      "legend": "Appel de découverte de 30 minutes sans pression"
+    }
+  },
+  "Why": {
+    "title": "Vous ne pouvez pas battre l'IA... alors pourquoi ne pas <underline>l'utiliser</underline>?",
+    "description": "Avec le lancement public du ChatGPT d'OpenAI et du modèle linguistique GPT-4, les gens commencent à voir la véritable puissance de l'IA. Nous vous aidons à intégrer cette puissance dans votre entreprise.",
+    "cta": "Réservez votre appel d'audit gratuit",
+    "legend": "Appel de découverte de 30 minutes sans pression",
+    "sections": {
+      "section_1": {
+        "title": "Arrêtez de perdre des centaines d'heures de travail sur des tâches répétitives",
+        "description": "En utilisant des automatisations de flux de travail puissantes, nous pouvons vous aider à automatiser les tâches ennuyeuses et chronophages."
+      },
+      "section_2": {
+        "title": "Laissez l'IA gérer 80 % de votre support client",
+        "description": "En utilisant la puissance des chatbots IA formés sur l'ensemble des données de votre entreprise, vous pourrez gérer 80 % de vos tickets de support avec l'IA."
+      },
+      "section_3": {
+        "title": "Confiez l'onboarding des nouveaux clients à l'IA",
+        "description": "Les chatbots pour usage interne peuvent rendre la vie de vos employés 10 fois plus facile et les rendre 10 fois plus productifs."
+      }
+    }
+  },
+  "Services": {
+    "service1": {
+      "title": "Chatbots pour support client",
+      "description": "Nous construisons des chatbots personnalisés formés sur l'ensemble des données de votre entreprise - descriptions de produits, spécifications, PDF, base de données de chat de support client, etc.",
+      "ctaText": "Se renseigner sur les chatbots IA"
+    },
+    "service2": {
+      "title": "Automatisations de flux de travail",
+      "description": "Effectuer manuellement des tâches répétitives prend non seulement plus de temps mais laisse également place à l'erreur humaine. En créant des automatisations de flux de travail IA pour vos besoins spécifiques, vous pourrez décharger des heures de travail.",
+      "ctaText": "Se renseigner sur les automatisations"
+    },
+    "service3": {
+      "title": "Chatbots pour usage interne",
+      "description": "Les chatbots ne sont pas uniquement utiles pour le support client. Les chatbots pour usage interne peuvent être utilisés pour une variété de tâches - comme aider à l'intégration de nouveaux employés, répondre à des questions courantes, planifier des appels, etc.",
+      "ctaText": "Se renseigner sur les chatbots internes"
+    }
+  },
+
+  "Process": {
+    "title": "Notre processus",
+    "steps": {
+      "step1": {
+        "title": "Réservez votre appel de découverte gratuit",
+        "description": "Lors de cet appel, vous partagerez un peu plus sur votre entreprise, les processus que vous avez en place, et nous suggérerons des domaines dans lesquels l'IA peut vous aider",
+        "ctaText": "Parlez-nous aujourd'hui",
+        "legend": "Appel de découverte de 30 minutes sans pression"
+      },
+      "step2": {
+        "title": "Session de planification et stratégie",
+        "description": "Si nous sommes compatibles, après l'appel de découverte, nous commencerons la planification de la marche à suivre. Nous programmerons un appel de session stratégique où nous partagerons avec vous les prochaines étapes, et ajusterons le plan si nécessaire."
+      },
+      "step3": {
+        "title": "Développement",
+        "description": "Une fois que nous nous sommes mis d'accord sur la stratégie et le plan d'action, nous nous mettons au travail et commençons à développer vos nouvelles solutions d'IA."
+      },
+      "step4": {
+        "title": "Déploiement + optimisation",
+        "description": "Une fois que nous sommes prêts avec le développement, nous déploierons le produit et commencerons à chercher des domaines potentiels d'amélioration.",
+        "ctaText": "Commencer",
+        "legend": "Appel de découverte de 30 minutes sans pression"
+      }
+    }
+  },
+  "BookCall": {
+    "title": "Réservez votre appel d'audit gratuit",
+    "label": "Planifiez votre appel avec nous",
+    "legend": "Appel de découverte sans pression de 30 minutes",
+    "paragraphs": {
+      "p1": "L'objectif de cet appel est de vous connaître, vous et votre entreprise, et de voir si vous êtes un bon candidat. Trouvez un créneau qui vous convient dans l'agenda et parlons-en !",
+      "p2": "Cet appel est parfait pour :"
+    },
+    "lists": {
+      "l1": "Les entreprises cherchant à améliorer leur efficacité",
+      "l2": "Les fondateurs et dirigeants au niveau C ayant des idées précises sur la manière d'implémenter l'IA dans leurs entreprises",
+      "l3": "Les fondateurs et dirigeants au niveau C cherchant à mieux comprendre l'IA et comment l'implémenter dans leurs entreprises"
+    }
+  },
+  "Cta": {
+    "title": "Prêt à transformer votre entreprise ?",
+    "description": "Nous vous accompagnons dans l'automatisation de vos processus et l'optimisation de votre activité.",
+    "benefits": {
+      "b1": "Réduisez les coûts",
+      "b2": "Accélérez les opérations",
+      "b3": "Améliorez l'efficacité",
+      "b4": "Maximisez vos profits"
+    },
+    "cta": "Réservez votre appel d'audit gratuit"
+  },
+  "Footer": {
+    "copyright": "Droits d'auteur © {date} Aimplify. Tous droits réservés."
+  }
+}
