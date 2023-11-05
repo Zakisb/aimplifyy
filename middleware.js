@@ -2,12 +2,11 @@ import createIntlMiddleware from "next-intl/middleware";
 import { NextRequest } from "next/server";
 import { match } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
-import { localesListe } from "./navigation";
 
 let locales = ["en", "fr"];
 let defaultLocale = "en";
 
-async function getLocale(request: Request) {
+async function getLocale(request) {
   const headers = new Headers(request.headers);
   const acceptLanguage = headers.get("accept-language");
   if (acceptLanguage) {
@@ -19,7 +18,7 @@ async function getLocale(request: Request) {
   return match(languages, locales, defaultLocale);
 }
 
-export default async function middleware(request: NextRequest) {
+export default async function middleware(request) {
   // Step 1: Use the incoming request
   const locale = (await getLocale(request)) ?? defaultLocale;
 
