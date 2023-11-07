@@ -1,7 +1,6 @@
 import { Inter, DM_Sans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import {
-  unstable_setRequestLocale,
   getFormatter,
   getNow,
   getTimeZone,
@@ -48,7 +47,6 @@ async function getMessages(locale) {
 export default async function RootLayout({ children, params: { locale } }) {
   if (!locales.includes(locale)) notFound();
   const messages = await getMessages(locale);
-  unstable_setRequestLocale(locale);
 
   return (
     <html lang={locale}>
