@@ -1,10 +1,12 @@
 import { Inter, DM_Sans } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
+
 import {
   getFormatter,
   getNow,
   getTimeZone,
-  getTranslator,
+  getTranslations,
 } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "@/app/globals.css";
@@ -14,10 +16,10 @@ const inter = Inter({ subsets: ["latin"] });
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export async function generateMetadata({ params: { locale } }) {
-  const t = await getTranslator(locale);
-  const formatter = await getFormatter(locale);
-  const now = await getNow(locale);
-  const timeZone = await getTimeZone(locale);
+  const t = await getTranslations({ locale: locale });
+  const formatter = await getFormatter({ locale: locale });
+  const now = await getNow({ locale: locale });
+  const timeZone = await getTimeZone({ locale: locale });
 
   return {
     title: t("Title"),
@@ -47,6 +49,7 @@ async function getMessages(locale) {
 export default async function RootLayout({ children, params: { locale } }) {
   if (!locales.includes(locale)) notFound();
   const messages = await getMessages(locale);
+  unstable_setRequestLocale(locale);
 
   return (
     <html lang={locale}>
