@@ -6,7 +6,6 @@ import Why from "./_components/Why";
 import BookCall from "./_components/BookCall";
 import BookCallCta from "./_components/BookCallCta";
 import Footer from "./_components/Footer";
-import { useTranslations } from "next-intl";
 
 import Banner from "./_components/Banner";
 

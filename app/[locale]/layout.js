@@ -1,32 +1,26 @@
 import { Inter, DM_Sans } from "next/font/google";
-import { NextIntlClientProvider } from "next-intl";
+import { NextIntlClientProvider, createTranslator } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 
-import {
-  getFormatter,
-  getNow,
-  getTimeZone,
-  getTranslations,
-} from "next-intl/server";
+import { getFormatter, getNow, getTimeZone } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "@/app/globals.css";
 import Script from "next/script";
+import { getTranslations } from "next-intl/server";
 
 const inter = Inter({ subsets: ["latin"] });
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export async function generateMetadata({ params: { locale } }) {
-  const t = await getTranslations({ locale: locale });
-  const formatter = await getFormatter({ locale: locale });
-  const now = await getNow({ locale: locale });
-  const timeZone = await getTimeZone({ locale: locale });
+  const messages = await getMessages(locale);
+
+  // You can use the core (non-React) APIs when you have to use next-intl
+  // outside of components. Potentially this will be simplified in the future
+  // (see https://next-intl-docs.vercel.app/docs/next-13/server-components).
+  const t = createTranslator({ locale, messages });
 
   return {
     title: t("Title"),
-    other: {
-      currentYear: formatter.dateTime(now, { year: "numeric" }),
-      timeZone: timeZone || "N/A",
-    },
   };
 }
 
