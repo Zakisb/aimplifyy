@@ -8,7 +8,7 @@ import {
   getTranslator,
 } from "next-intl/server";
 import { notFound } from "next/navigation";
-import "@/app/globals.css";
+// import "@/app/globals.css";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
