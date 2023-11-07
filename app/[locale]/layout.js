@@ -8,7 +8,7 @@ import {
   getTranslator,
 } from "next-intl/server";
 import { notFound } from "next/navigation";
-// import "@/app/globals.css";
+import "@/app/globals.css";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -50,39 +50,13 @@ export default async function RootLayout({ children, params: { locale } }) {
   const messages = await getMessages(locale);
   unstable_setRequestLocale(locale);
 
-  const polyfills = [
-    "Intl",
-    "Intl.Locale",
-    "Intl.DateTimeFormat",
-    `Intl.DateTimeFormat.~locale.${locale}`,
-    `Intl.NumberFormat`,
-    `Intl.NumberFormat.~locale.${locale}`,
-    "Intl.PluralRules",
-    `Intl.PluralRules.~locale.${locale}`,
-    "Intl.RelativeTimeFormat",
-    `Intl.RelativeTimeFormat.~locale.${locale}`,
-    "Intl.ListFormat",
-    `Intl.ListFormat.~locale.${locale}`,
-  ];
-
   return (
     <html lang={locale}>
-      <NextIntlClientProvider
-        timeZone="Europe/Paris"
-        locale={locale}
-        messages={messages}
-      >
+      <NextIntlClientProvider locale={locale} messages={messages}>
         <body className={`${inter.className} ${dmSans.className}`}>
           {children}
         </body>
       </NextIntlClientProvider>
-      <Script
-        strategy="beforeInteractive"
-        src={
-          "https://polyfill.io/v3/polyfill.min.js?features=" +
-          polyfills.join(",")
-        }
-      />
     </html>
   );
 }
